@@ -8,7 +8,8 @@ public class Rilevamento {
 	private Date data;
 	private int umidita;
 
-	public Rilevamento(String localita, Date data, int umidita) {
+	public Rilevamento(String localita, Date data, int umidita) 
+	{
 		this.localita = localita;
 		this.data = data;
 		this.umidita = umidita;
@@ -44,7 +45,8 @@ public class Rilevamento {
 	// }
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return String.valueOf(umidita);
 	}
 

@@ -6,17 +6,20 @@ import java.sql.SQLException;
 
 public class ConnectDB {
 	
-	// check user e password
-	static private final String jdbcUrl = "jdbc:mysql://localhost/meteo?user=root&password=root";
+	static private final String jdbcUrl = "jdbc:mysql://localhost/meteo?user=root&password=S4nsone1";
 	
 
-	public static Connection getConnection() {
+	public static Connection getConnection() 
+	{
 
-		try {
+		try 
+		{
 				Connection connection = DriverManager.getConnection(jdbcUrl);
 				return connection;
 
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) 
+		{
 
 			e.printStackTrace();
 			throw new RuntimeException("Cannot get a connection " + jdbcUrl, e);

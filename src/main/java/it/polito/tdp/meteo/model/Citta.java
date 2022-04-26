@@ -4,12 +4,9 @@ import java.util.List;
 
 public class Citta {
 	
-	
 	private String nome;
 	private List<Rilevamento> rilevamenti;
 	private int counter = 0;
-	
-	
 	
 	public Citta(String nome) {
 		this.nome = nome;
@@ -49,7 +46,8 @@ public class Citta {
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode() 
+	{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
@@ -57,7 +55,8 @@ public class Citta {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) 
+	{
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -65,16 +64,19 @@ public class Citta {
 		if (getClass() != obj.getClass())
 			return false;
 		Citta other = (Citta) obj;
-		if (nome == null) {
+		if (nome == null) 
+		{
 			if (other.nome != null)
 				return false;
-		} else if (!nome.equals(other.nome))
+		} 
+		else if (!nome.equals(other.nome))
 			return false;
 		return true;
 	}
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return nome;
 	}
 	
